@@ -15,9 +15,8 @@
     }
 
     body {
-      background: url('https://images.unsplash.com/photo-1581093588401-6001d6e10c2f?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
+      background-color: #000;
+      color: #d4f1ff;
       overflow-x: hidden;
       animation: fadeIn 2s ease-in-out;
     }
@@ -39,30 +38,30 @@
       align-items: center;
       padding: 1rem 2rem;
       background-color: #0a0a0a;
-      box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+      box-shadow: 0 0 10px rgba(0, 200, 255, 0.3);
       position: sticky;
       top: 0;
       z-index: 1000;
     }
 
-    .logo {
-      font-size: 1.8rem;
-      font-weight: 600;
-      color: gold;
+    .logo img {
+      width: 160px;
+      height: auto;
+      filter: drop-shadow(0 0 12px #00c8ff);
     }
 
     nav a {
       margin: 0 1rem;
       text-decoration: none;
-      color: white;
+      color: #d4f1ff;
       font-weight: 500;
       transition: 0.3s;
       cursor: pointer;
     }
 
     nav a:hover {
-      color: gold;
-      text-shadow: 0 0 10px gold;
+      color: #00c8ff;
+      text-shadow: 0 0 10px #00c8ff;
     }
 
     .auth-buttons {
@@ -72,26 +71,26 @@
 
     .capsule-btn {
       padding: 0.6rem 1.2rem;
-      border: 1px solid gold;
+      border: 1px solid #00c8ff;
       border-radius: 25px;
       background: transparent;
-      color: gold;
+      color: #00c8ff;
       cursor: pointer;
       font-weight: 500;
       transition: all 0.3s;
     }
 
     .capsule-btn:hover {
-      background: gold;
+      background: #00c8ff;
       color: black;
-      box-shadow: 0 0 15px gold;
+      box-shadow: 0 0 15px #00c8ff;
     }
 
     .hero {
       padding: 4rem 2rem;
       text-align: center;
-      color: gold;
-      background: rgba(0, 0, 0, 0.5);
+      color: #00c8ff;
+      background: rgba(0, 0, 0, 0.6);
       backdrop-filter: blur(6px);
     }
 
@@ -101,21 +100,21 @@
 
     .hero p {
       font-size: 1.2rem;
-      color: white;
+      color: #d4f1ff;
       max-width: 800px;
       margin: 1rem auto;
     }
 
     .section {
       padding: 3rem 2rem;
-      background-color: rgba(17, 17, 17, 0.9);
+      background-color: rgba(20, 20, 30, 0.95);
       margin: 2rem;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+      box-shadow: 0 0 10px rgba(0, 200, 255, 0.2);
     }
 
     .section h2 {
-      color: gold;
+      color: #00c8ff;
       margin-bottom: 1rem;
     }
 
@@ -125,37 +124,52 @@
       line-height: 1.6;
     }
 
+    .video-box {
+      display: flex;
+      justify-content: center;
+      margin: 2rem auto;
+      max-width: 960px;
+    }
+
+    .video-box video {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 200, 255, 0.3);
+    }
+
     footer {
       text-align: center;
       padding: 1rem;
       background-color: #000;
       font-size: 0.8rem;
-      opacity: 1;
-      transition: opacity 2s ease-out;
+      color: #d4f1ff;
     }
 
     .footer-btn {
       padding: 0.4rem 1rem;
-      border: 1px solid gold;
+      border: 1px solid #00c8ff;
       border-radius: 20px;
       background: transparent;
-      color: white;
+      color: #d4f1ff;
       cursor: pointer;
       margin: 0.5rem;
       transition: all 0.4s ease-in-out;
     }
 
     .footer-btn:hover {
-      background: rgba(255, 215, 0, 0.1);
-      box-shadow: 0 0 12px gold;
-      color: gold;
+      background: rgba(0, 200, 255, 0.1);
+      box-shadow: 0 0 12px #00c8ff;
+      color: #00c8ff;
     }
   </style>
 </head>
 
 <body>
   <header>
-    <div class="logo">Mindnest</div>
+    <div class="logo">
+      <img src="C:\Users\syed.safee\Downloads\Mindnset Website\Preview.png" alt="Mindnest Symbol">
+    </div>
     <nav>
       <a href="#who">Home</a>
       <a href="#why">Services</a>
@@ -173,50 +187,48 @@
     <p>Your trusted launchpad for mastering AWS, Azure, GCP, and DevOps.</p>
   </section>
 
-  <section id="who" class="section">
-    <h2>🧠 Who We Are – Welcome to MindNest</h2>
-    <p>At MindNest, we are more than just an IT training institute—we are a launchpad for cloud careers. Founded with the vision to empower aspiring tech professionals, MindNest is built by industry experts who understand the evolving landscape of cloud computing and DevOps.</p>
-    <p>We specialize in delivering hands-on, career-focused training in the most in-demand technologies: AWS, Azure, GCP, and DevOps. Whether you're a fresher, a working professional, or someone looking to switch careers, MindNest is your trusted partner in mastering the cloud.</p>
-  </section>
+  <div class="video-box">
+    <video controls poster="https://img.youtube.com/vi/ZtYNiL7Qjtc/maxresdefault.jpg">
+      <source src="https://cdn.pixabay.com/video/2023/05/02/162664-823773901_large.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
-  <section id="why" class="section">
-    <h2>🚀 Why Choose MindNest?</h2>
+  <section class="section" id="why">
+    <h2>Why Choose MindNest?</h2>
     <ul>
-      <li><strong>Industry-Relevant Curriculum:</strong> Courses designed by professionals in top tech companies.</li>
-      <li><strong>Hands-On Projects:</strong> Real-world projects, labs, and cloud simulations in every module.</li>
-      <li><strong>Expert Mentors:</strong> Trained by certified cloud architects and DevOps engineers.</li>
-      <li><strong>Placement Support:</strong> Resume building, interview prep, and referrals.</li>
-      <li><strong>Mock Interviews & Career Coaching:</strong> Practice rounds, personalized feedback, and HR training.</li>
-      <li><strong>Flexible Learning Options:</strong> Online, offline, weekend batches—learn your way.</li>
+      <li>Expert-led hands-on training</li>
+      <li>Real-world DevOps, Cloud & Infrastructure Projects</li>
+      <li>One-on-one mentorship</li>
+      <li>Live doubt-clearing sessions</li>
     </ul>
   </section>
 
-  <section id="teach" class="section">
-    <h2>📚 What We Teach</h2>
+  <section class="section" id="courses">
+    <h2>Courses Offered</h2>
     <ul>
-      <li><strong>Cloud Platforms:</strong> AWS (EC2, S3, IAM, Lambda, CloudFormation), Azure (VMs, Blob, DevOps), GCP (Compute, Functions, BigQuery, Kubernetes)</li>
-      <li><strong>DevOps Tools:</strong> Jenkins, GitHub Actions, GitLab CI, Docker, Kubernetes, Terraform, Ansible</li>
-      <li><strong>Monitoring:</strong> Prometheus, Grafana, ELK Stack</li>
-      <li><strong>Version Control:</strong> Git, GitHub, Bitbucket</li>
+      <li>☁️ AWS Certified Solutions Architect</li>
+      <li>☁️ Microsoft Azure Administrator (AZ-104)</li>
+      <li>☁️ Google Cloud Fundamentals</li>
+      <li>🔧 DevOps with Jenkins, GitHub, Docker, Kubernetes</li>
+      <li>🛡️ Infrastructure & Security Foundations</li>
     </ul>
   </section>
 
-  <section id="placement" class="section">
-    <h2>🎯 Placement & Career Support</h2>
-    <p>We go beyond training. Our placement team helps build your resume, prepare you for interviews, conduct mock sessions, and connect you with top hiring partners including TCS, Infosys, Accenture, Capgemini, and Cognizant.</p>
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>MindNest is a new-age cloud training initiative focused on bridging the gap between knowledge and industry needs. Whether you're an IT fresher or a working professional, we are here to help you reach your career goals through structured, beginner-friendly, and practical learning paths.</p>
+  </section>
 
-    <h3>🗣️ Mock Interviews & Mentorship</h3>
-    <ul>
-      <li>Technical interviews based on chosen platforms</li>
-      <li>DevOps scenario solving rounds</li>
-      <li>HR/Behavioral feedback with growth plan</li>
-    </ul>
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <p>Email: support@mindnest.cloud</p>
+    <p>Phone: +91-999-999-9999</p>
+    <button class="footer-btn">Get in Touch</button>
   </section>
 
   <footer>
-    &copy; 2025 MindNest. All rights reserved.<br>
-    <button class="footer-btn">Privacy Policy</button>
-    <button class="footer-btn">Terms of Service</button>
+    &copy; 2025 MindNest. All rights reserved.
   </footer>
 </body>
 
